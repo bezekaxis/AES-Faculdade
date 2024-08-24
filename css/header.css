@@ -36,12 +36,17 @@
 /*Navigation Bar section*/
 
 #nav-bar {
-    display: none;
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 30%;
+    width: 600px;
     background-color: #223742;
+    color: white;
+    z-index: 100;
 }
+.display-none {
+    display: none;
+}
+
 /* Navigation bar top section*/
 #nav-menu-top {
     display: flex;
@@ -50,5 +55,18 @@
     width: 100%;
 }
 #close-nav-bar-button {
-    left: 10px
+    left: 20px
+}
+/* Navigation links*/
+
+
+.navigation-links-items {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 20px;
+}
+.navigation-links-items:hover {
+    background-color: hsl(201, 32%, 17%);
 }
