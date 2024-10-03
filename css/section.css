@@ -7,9 +7,7 @@
     flex-direction: column;
     align-items: center;
 }
-.introduction-content-page {
-    margin-bottom: 50px;
-}
+
 .background-section-image {
     background-size: cover;
     background-position: center;
@@ -34,12 +32,14 @@
     justify-content: center;
     gap: 50px;
 }
+
 .section-title-container h1 {
     font-size: 6rem;
     text-shadow: 3px 5px 5px black;
     font-weight: 700;
-    color:  #e5e5e0;
+    color: #e5e5e0;
 }
+
 .introduction-button {
     display: inline-block;
     font-size: 1.5rem;
@@ -50,6 +50,7 @@
     padding: 5px 10px;
     transition: 0.15s;
 }
+
 .introduction-button:hover {
     background-color: #d3d3cd
 }
@@ -58,14 +59,18 @@
 
 #section-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
 .content-section {
-    width: 65%;
+    width: 70%;
+    margin-bottom: 50px;
 }
 
 /*Introduction message animation*/
-.animated-title{
+.animated-title {
     font-family: monospace;
     color: white;
     font-size: 3rem;
@@ -79,25 +84,38 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
 }
+
 @keyframes borderEasing {
     from {
         border-right: 2px solid;
     }
+
     to {
         border: none;
     }
 }
+
 /*Text styles*/
 
 .h1-title {
     font-size: 3rem;
     font-weight: 500;
+    padding-top: 50px;
     margin-bottom: 20px;
 }
+
+.h2-subtitle {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(69, 69, 69);
+}
+
 .p-text {
     color: #1b1b1b;
     line-height: 1.5em;

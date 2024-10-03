@@ -7,11 +7,14 @@ const closeMenu = document.querySelector('#close-nav-bar-button');
 const lateralMenu = document.querySelector('#nav-bar');
 const body = document.body;
 
-hamburguerButton.addEventListener('click', function(){
+hamburguerButton.addEventListener('click', function () {
     lateralMenu.classList.remove('display-none');
 });
 
-closeMenu.addEventListener('click', function(){
+closeMenu.addEventListener('click', function () {
     lateralMenu.classList.add('display-none');
 });
 
+window.addEventListener('hashchange', function () {
+    lateralMenu.classList.add('display-none');
+})
